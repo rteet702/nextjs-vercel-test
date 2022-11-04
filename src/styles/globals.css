@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 html,
 body {
     height: 100%;
@@ -13,5 +19,16 @@ body {
 }
 
 .styled-button {
-    @apply bg-neutral-500 hover:bg-neutral-400 bg-opacity-60 p-3 font-bold text-neutral-50 transition-colors;
+    @apply bg-neutral-500
+    hover:bg-neutral-400
+    bg-opacity-60
+    p-3
+    font-bold
+    text-neutral-50
+    transition-colors
+    shadow;
+}
+
+.modal-bg {
+    @apply absolute top-0 right-0 left-0 bottom-0 bg-black bg-opacity-20 backdrop-blur-sm transition-all;
 }
