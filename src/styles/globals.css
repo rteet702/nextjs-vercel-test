@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: radial-gradient(circle at top left, #111111, #242424);
+    background-color: #242424;
+}
+
+.styled-button {
+    @apply bg-neutral-500 hover:bg-neutral-400 bg-opacity-60 p-3 font-bold text-neutral-50 transition-colors;
+}
